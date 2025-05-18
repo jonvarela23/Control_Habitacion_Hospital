@@ -1,0 +1,4587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GUIPanel</class>
+ <widget class="QWidget" name="GUIPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>GUIPanel</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QTabWidget" name="Habitaciones">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>841</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="Habitacion1">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="title">
+     <string> 1</string>
+    </attribute>
+    <widget class="QGroupBox" name="Visualizar1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto1">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura1">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto1">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia1">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido1">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente1">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="Actuar1">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 1 Desconectada</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion2">
+    <attribute name="title">
+     <string>2</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar2">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 2 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion3">
+    <attribute name="title">
+     <string>3</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar3">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 3 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente3">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion4">
+    <attribute name="title">
+     <string>4</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar4">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 4 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto4">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad4">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto4">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia4">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente4">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion5">
+    <attribute name="title">
+     <string>5</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar5">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 5 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto5">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad5">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto5">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia5">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente5">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion6">
+    <attribute name="title">
+     <string>6</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar6">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 6 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto6">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad6">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto6">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia6">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente6">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion7">
+    <attribute name="title">
+     <string>7</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar7">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 7 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto7">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto7">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad7">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto7">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia7">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido7">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente7">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion8">
+    <attribute name="title">
+     <string>8</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar8">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 8 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto8">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto8">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad8">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto8">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia8">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido8">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente8">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion9">
+    <attribute name="title">
+     <string>9</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar9">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 9 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto9">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto9">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad9">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto9">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia9">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido9">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto9">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente9">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion10">
+    <attribute name="title">
+     <string>10</string>
+    </attribute>
+    <widget class="QGroupBox" name="Actuar10">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Conectado10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 10 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto10">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto10">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad10">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto10">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia10">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido10">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto10">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente10">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion11">
+    <attribute name="title">
+     <string>11</string>
+    </attribute>
+    <widget class="QLabel" name="Conectado11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 11 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto11">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto11">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad11">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto11">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia11">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido11">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto11">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente11">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="Actuar11">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion12">
+    <attribute name="title">
+     <string>12</string>
+    </attribute>
+    <widget class="QLabel" name="Conectado12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 12 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto12">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto12">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad12">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto12">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia12">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido12">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto12">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente12">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="Actuar12">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion13">
+    <attribute name="title">
+     <string>13</string>
+    </attribute>
+    <widget class="QLabel" name="Conectado13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 13 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto13">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto13">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad13">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto13">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia13">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido13">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto13">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente13">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="Actuar13">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion14">
+    <attribute name="title">
+     <string>14</string>
+    </attribute>
+    <widget class="QLabel" name="Conectado14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 14 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto14">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura14">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto14">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad14">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto14">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia14">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido14">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto14">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente14">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="Actuar14">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion15">
+    <attribute name="title">
+     <string>15</string>
+    </attribute>
+    <widget class="QLabel" name="Conectado15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 15 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto15">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura15">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto15">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad15">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto15">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia15">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido15">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto15">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente15">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="Actuar15">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Habitacion16">
+    <attribute name="title">
+     <string>16</string>
+    </attribute>
+    <widget class="QLabel" name="Conectado16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habitacion 16 Desconectada</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="Visualizar16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Visualizar</string>
+     </property>
+     <widget class="QLabel" name="HumedadTexto16">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humedad (%)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Temperatura16">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TemperaturaTexto16">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperatura (ºC)</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="Humedad16">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="digitCount">
+       <number>4</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PresenciaTexto16">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia</string>
+      </property>
+     </widget>
+     <widget class="Led" name="Presencia16">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="color">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPacienteRuido16">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteRuidoTexto16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente Ruido</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LlamadaPacienteTexto16">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Llamada Paciente</string>
+      </property>
+     </widget>
+     <widget class="Led" name="LlamadaPaciente16">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Color Led component</string>
+      </property>
+      <property name="whatsThis">
+       <string>Led indicator</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="Actuar16">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>381</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Actuar</string>
+     </property>
+     <widget class="QCheckBox" name="ActuarTermostato16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Termostato Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarPersianas16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Persianas Automático</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLlamadaRuido16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar Llamada Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="ActuarLEDRuido16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Actuar LED Ruido</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="PresenciaPC16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>191</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Presencia PC</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="Conectar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Conectar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Conectado">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>20</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>PC Desconectado</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Error">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>20</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Habitaciones_texto">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>HABITACIONES:</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Led</class>
+   <extends>QWidget</extends>
+   <header>analogwidgets/led.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
